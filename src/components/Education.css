@@ -1,0 +1,170 @@
+.EducationSection {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.EducationSection .Content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.EducationSection h1 {
+  font-size: 80px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.EducationList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.EducationItem {
+  background-color: #111;
+  border: 2px solid #ff7e5f;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0 4px 8px #ff7e5f;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.EducationItem:hover {
+  box-shadow: 0 8px 50px #ff7e5f;
+}
+
+.DateInstitution {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Date {
+  font-size: 24px;
+  margin-right: 50px;
+  color: #feb47b;
+}
+
+.Institution {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.Details {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.Info {
+  margin-top: 10px;
+}
+
+.InfoItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.Label {
+  font-weight: bold;
+  color: #ff7e5f;
+}
+
+.Value {
+  color: #ffffff;
+}
+
+@media (max-width: 1662px) {
+  .EducationSection {
+    padding: 30px;
+    margin-top: 10px;
+  }
+
+  .EducationSection h1 {
+    font-size: 60px;
+  }
+
+  .EducationItem {
+    padding: 15px;
+  }
+
+  .Date {
+    font-size: 24px;
+  }
+
+  .Institution {
+    font-size: 24px;
+    text-align: right;
+  }
+
+  .Details {
+    font-size: 18px;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 768px) {
+  .EducationSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 80px;
+  }
+
+  .EducationSection h1 {
+    font-size: 40px;
+  }
+
+  .EducationItem {
+    padding: 15px;
+  }
+
+  .Date {
+    font-size: 16px;
+  }
+
+  .Institution {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .Details {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .EducationSection h1 {
+    font-size: 30px;
+  }
+
+  .EducationItem {
+    padding: 10px;
+  }
+
+  .Date {
+    font-size: 16px;
+  }
+
+  .Institution {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .Details {
+    font-size: 12px;
+  }
+}

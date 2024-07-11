@@ -1,0 +1,253 @@
+.Header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 1000;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.MenuIcon {
+  font-size: 40px;
+  color: #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.Logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ButtonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.ResumeButton {
+  font-size: 30px;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ResumeButton:hover {
+  background-color: #ccc;
+  color: #111827;
+  border-color: #ccc;
+}
+
+.DropdownMenu {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  background-color: #111;
+  border: 2px solid #ff7e5f;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+}
+
+.DropdownMenu ul {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 5px;
+}
+
+.DropdownMenu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 20px;
+  color: #feb47b;
+  text-transform: uppercase;
+}
+
+.DropdownMenu li:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.DropdownMenu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes gradientShadow {
+  0% {
+    box-shadow: 0 0 5px 5px #ff7e5f;
+  }
+  50% {
+    box-shadow: 0 0 5px 5px #feb47b;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #ff7e5f;
+  }
+}
+
+.DropdownMenu .active {
+  background-color: transparent;
+  color: #ff7e5f;
+  border-radius: 20px;
+  animation: gradientShadow 3s infinite;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.Header .SocialIcon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.SocialIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1662px) {
+  .Header {
+    padding: 15px 20px;
+  }
+
+  .Logo {
+    font-size: 35px;
+  }
+
+  .ResumeButton {
+    font-size: 28px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    padding: 10px 20px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .LogoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    position: relative;
+  }
+
+  .Logo {
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0;
+  }
+
+  .MenuIcon {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+  }
+
+  .ButtonGroup {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .ResumeButton {
+    display: none;
+  }
+
+  .DropdownMenu {
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .DropdownMenu li {
+    padding: 10px 20px;
+  }
+
+  .Header .SocialIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 420px) {
+  .Logo {
+    font-size: 18px;
+  }
+
+  .MenuIcon {
+    font-size: 20px;
+  }
+
+  .Header .SocialIcon {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 365px) {
+  .Logo {
+    font-size: 15px;
+  }
+
+  .MenuIcon {
+    font-size: 18px;
+  }
+
+  .Header .SocialIcon {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,290 @@
+.HobbySection {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.HobbySection .Content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.HobbySection h1 {
+  font-size: 80px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+.HobbyContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.HobbyDescription {
+  flex: 1;
+  max-width: 50%;
+  font-size: 24px;
+  margin-right: 50px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.HobbyImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
+.ImageRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ImageRow img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.LargeImage {
+  margin-top: 40px;
+  height: 310px;
+  width: 60%;
+}
+
+.LargeImage2 {
+  height: 150px;
+  width: 100%;
+}
+
+.SmallImage1 {
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 90%;
+  height: 155px;
+}
+
+.SmallImage2 {
+  margin-left: 10%;
+  width: 90%;
+  height: 155px;
+}
+
+@media (max-width: 1662px) {
+  .HobbySection {
+    padding: 30px;
+    margin-top: 10px;
+  }
+
+  .HobbySection h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .HobbyDescription {
+    font-size: 20px;
+  }
+
+  .LargeImage {
+    margin-top: 20px;
+    height: 234px;
+    width: 60%;
+  }
+
+  .LargeImage2 {
+    height: 125px;
+    width: 100%;
+  }
+
+  .SmallImage1 {
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 98%;
+    height: 115px;
+  }
+
+  .SmallImage2 {
+    margin-left: 2%;
+    width: 98%;
+    height: 115px;
+  }
+}
+
+@media (max-width: 840px) {
+  .HobbySection {
+    padding: 10px;
+    margin-bottom: 90px;
+  }
+
+  .HobbyContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HobbyDescription,
+  .HobbyImages {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .HobbyDescription {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HobbySection {
+    padding: 10px;
+    margin-bottom: 90px;
+  }
+
+  .HobbySection h1 {
+    font-size: 40px;
+  }
+
+  .HobbyContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HobbyDescription,
+  .HobbyImages {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .HobbyDescription {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .HobbySection .carousel .slide img {
+    height: auto;
+    max-height: 250px;
+    max-width: 300px;
+  }
+
+  .HobbySection .carousel .control-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .HobbySection .carousel .control-dots .dot {
+    background-color: #ff7e5f;
+  }
+
+  .HobbySection .carousel .slider-wrapper {
+    padding-bottom: 70px;
+  }
+
+  .HobbySection .carousel .control-next.control-arrow:before {
+    border-left: 8px solid #ff7e5f;
+  }
+
+  .HobbySection .carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #ff7e5f;
+  }
+
+  .HobbySection .carousel .control-arrow {
+    top: 50%;
+    transform: translateY(-70%);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #ff7e5f;
+  }
+
+  .ModalHobby {
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .ModalContentHobby {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    color: #ffffff;
+    position: relative;
+    box-shadow: #feb47b 0px 0px 90px;
+  }
+
+  .CloseButtonHobby {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .ReadMoreHobby {
+    background-color: transparent;
+    border: 4px solid;
+    font-size: 18px;
+    color: #ff7e5f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+
+  .ReadMoreHobby:hover {
+    background-color: #ccc;
+    border-color: #ccc;
+    border-image: none;
+    transform: scale(1.1);
+    border-radius: 20px;
+    color: #111827;
+  }
+
+  .HobbyDescriptionFUllText {
+    font-size: 18px;
+    text-align: center;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 420px) {
+  .HobbySection {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 380px) {
+  .HobbySection {
+    margin-top: 100px;
+  }
+}

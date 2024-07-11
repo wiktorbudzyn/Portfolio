@@ -1,0 +1,262 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.ProjectsSection {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.ProjectsSection .Content {
+  max-width: 100%;
+  text-align: center;
+}
+
+.ProjectsSection h1 {
+  font-size: 80px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.Carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.CarouselButton {
+  background-color: transparent;
+  border: none;
+  color: #ff7e5f;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 2rem;
+  color: #ff7e5f;
+  z-index: 1;
+  background: transparent;
+  border: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #feb47b;
+}
+
+.slick-dots li button:before {
+  color: #ff7e5f;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #feb47b;
+}
+
+.ProjectCardWrapper {
+  padding: 10px;
+}
+
+.ProjectCard {
+  width: 100%;
+  max-width: 550px;
+  height: 450px;
+  background-color: #111;
+  border: 2px solid #ff7e5f;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px #ff7e5f;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.ProjectCard:hover {
+  box-shadow: 0 8px 50px #ff7e5f;
+}
+
+.ProjectImage {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: auto;
+  flex-shrink: 0;
+}
+
+.ProjectDescription {
+  font-size: 24px;
+  margin: 25px 0 65px 0;
+  color: #ccc;
+}
+
+.ProjectButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff7e5f;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  position: absolute;
+  bottom: 15px;
+}
+
+.ProjectButton:hover {
+  background-color: #feb47b;
+}
+
+@media (max-width: 1662px) {
+  .ProjectsSection h1 {
+    font-size: 60px;
+  }
+
+  .ProjectCard {
+    width: 300px;
+    height: 400px;
+  }
+
+  .ProjectDescription {
+    font-size: 20px;
+  }
+
+  .ProjectButton {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 840px) {
+  .ProjectsSection {
+    padding: 10px;
+    margin-bottom: 120px;
+  }
+
+  .ProjectsSection .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProjectCard {
+    width: 400px;
+    height: 500px;
+  }
+
+  .Carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .CarouselButton {
+    background-color: transparent;
+    border: none;
+    color: #ff7e5f;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+  }
+
+  .ProjectDescription {
+    margin-bottom: 100px;
+  }
+
+  .ProjectButton {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProjectsSection {
+    padding: 10px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ProjectsSection .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProjectsSection h1 {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  .ProjectCard {
+    width: 250px;
+    height: 450px;
+  }
+
+  .Carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .CarouselButton {
+    background-color: transparent;
+    border: none;
+    color: #ff7e5f;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+  }
+
+  .ProjectButton {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ProjectsSection {
+    padding: 5px;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ProjectsSection h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
