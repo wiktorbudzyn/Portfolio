@@ -22,9 +22,9 @@ import projectImage19 from '../../assets/projects/radar-finansowy/19.png';
 import GitHubIcon from '../../assets/social/social2.png';
 
 const images = [
-    projectImage1, projectImage2, projectImage3, projectImage4, projectImage5, projectImage6,
-    projectImage7, projectImage8, projectImage9, projectImage10, projectImage11, projectImage12,
-    projectImage14, projectImage15, projectImage16, projectImage17, projectImage18, projectImage19
+    projectImage1, projectImage2, projectImage4, projectImage3, projectImage15, projectImage8,
+    projectImage11, projectImage9, projectImage10, projectImage12, projectImage14, projectImage16,
+    projectImage17, projectImage18, projectImage19, projectImage7, projectImage5, projectImage6
 ];
 
 function RadarFinansowy() {
