@@ -6,7 +6,7 @@ const experiences = [
     {
         company: "New Ventures",
         role: "Full Stack Developer",
-        duration: "2024 - Obecnie",
+        duration: "05.2024 - 01.2025",
         city: "Gdynia",
         employmentType: "Zdalnie",
         details: "Odpowiedzialność za koncepcję, implementację i rozwój interaktywnych stron internetowych oraz interfejsów użytkownika, zapewniając ich funkcjonalność i estetykę. Tworzenie oraz współpraca przy rozwijaniu oprogramowania zgodnie z określonymi wymaganiami, w tym tworzenie dokumentacji technicznej i użytkowej w językach takich jak XML, HTML, CSS oraz Python. Zapewnianie ciągłości działania oprogramowania poprzez monitorowanie, diagnozowanie i wprowadzanie niezbędnych zmian oraz aktualizacji, aby spełniało aktualne wymagania użytkowników. Opracowywanie, redagowanie i aktualizowanie przewodników wirtualnych, które pomagają użytkownikom w efektywnym korzystaniu z dostarczanych rozwiązań."
