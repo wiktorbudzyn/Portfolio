@@ -124,7 +124,7 @@
   position: relative;
   font-size: 26px;
   text-align: justify;
-  box-shadow: #feb47b 0px 0px 100px;
+  box-shadow: #feb47b 0px 0px 50px;
   overflow-y: auto;
 }
 

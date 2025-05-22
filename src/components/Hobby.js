@@ -12,7 +12,7 @@ const hobbiesDescription = `
  Budowanie zestawów z klocków LEGO to dla mnie idealny sposób na relaks.
  Jestem również fanem uniwersum Marvela - uwielbiam filmy oraz seriale związane z tym światem, zwłaszcza te dotyczące Spider-Mana.
  Zimą chętnie spędzam czas na stoku, doskonaląc swoje umiejętności narciarskie.
- W wolnym czasie lubię grać na konsoli, ostatnio głównie w takie gry jak FC24, Hogwarts Legacy czy CyberPunk 2077.
+ W wolnym czasie lubię grać na konsoli, ostatnio głównie w takie gry jak FC25 czy CyberPunk 2077.
  Interesuję się także technologią i sztuczną inteligencją, staram się śledzić nowości w tej szybko rozwijającej się dziedzinie. `;
 
 const Hobby = () => {

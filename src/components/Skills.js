@@ -3,11 +3,11 @@ import './Skills.css';
 import searchIcon from '../assets/search.png';
 
 const skills = {
-    "Języki Programowania": ["C#", "Python 3.12", "JavaScript ECMAScript 14", "PHP", "MATLAB"],
+    "Języki Programowania": ["Python", "JavaScript", "C#", "PHP", "MATLAB"],
     "Bazy Danych": ["MongoDB", "MySQL", "Oracle Database"],
-    "Front-end": ["HTML 5", "CSS 3", "React", "Angular", "Vue"],
+    "Front-end": [ "React", "HTML", "CSS", "Angular", "Vue"],
     "Back-end": ["Node.js", "Express.js", "ASP.NET Core"],
-    "Narzędzia i Technologie": ["GitHub", "XML", "PyTorch", "Jira", "Trello", "Unity", "WordPress", "PyCharm", "Visual Studio Code", "Visual Studio 2022"]
+    "Narzędzia i Technologie": ["PyTorch", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "GitHub", "Git", "Jira", "Trello", "Visual Studio Code", "PyCharm"]
 };
 
 function Skills() {

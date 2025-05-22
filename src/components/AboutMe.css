@@ -40,7 +40,7 @@
 .AboutMe .ProfileImage2 img {
   border-radius: 100px;
   max-width: 300px;
-  box-shadow: 0px 0px 100px #feb47b;
+  box-shadow: 0px 0px 50px #feb47b;
 }
 
 @keyframes pulsateGradient {
@@ -66,7 +66,7 @@
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-  animation: pulsateGradient 2s infinite;
+  animation: pulsateGradient 4s infinite;
   transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
   font-size: 30px;
   border-radius: 20px;
@@ -107,7 +107,7 @@
   color: #ffffff;
   position: relative;
   overflow-y: auto;
-  box-shadow: #feb47b 0px 0px 100px;
+  box-shadow: #feb47b 0px 0px 50px;
 }
 
 .AboutMe .CloseButton {
