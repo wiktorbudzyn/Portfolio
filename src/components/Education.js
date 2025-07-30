@@ -3,7 +3,7 @@ import './Education.css';
 
 const educationData = [
     {
-        date: "02.2024 - obecnie",
+        date: "02.2024 - 09.2025",
         institution: "Politechnika Częstochowska",
         course: "Sztuczna inteligencja i Data Science",
         degree: "Studia magisterskie"
